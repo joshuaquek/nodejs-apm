@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-apm",
+  "version": "1.0.0",
+  "description": "An open sourced APM for NodeJS",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "prestart": "flow-remove-types --pretty ./src/ -d ./prod",
+    "start": "node ./prod/index.js",
+    "flow": "flow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuaquek/nodejs-apm.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/joshuaquek/nodejs-apm/issues"
+  },
+  "homepage": "https://github.com/joshuaquek/nodejs-apm#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1"
+  },
+  "devDependencies": {
+    "flow-bin": "0.57.3",
+    "flow-remove-types": "1.2.3"
+  }
+}
